@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: ong-backend
+    env: node
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DATABASE_URL
+        value: postgresql://neondb_owner:npg_tSOq4Z9yDvLA@ep-still-thunder-aifx3ujl-pooler.c-4.us-east-1.aws.neon.tech/neondb?sslmode=require
+      - key: JWT_SECRET
+        value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiZW1haWwiOiJmYWxsb3VAb25nLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc3MjU0MjI1NiwiZXhwIjoxNzczMTQ3MDU2fQ.T6kgdbxpzbxNKQGmC-pYjMMze1LQ7SRGqkoPdjqN19Q
+      - key: JWT_EXPIRE
+        value: 7d
+      - key: CLOUDINARY_CLOUD_NAME
+        value: deji2tces
+      - key: CLOUDINARY_API_KEY
+        value: 312389633699566
+      - key: CLOUDINARY_API_SECRET
+        value: dSHgcPnewWg09B_kPIj46nkP6xA
