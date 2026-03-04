@@ -13,7 +13,8 @@ const app = express();
 
 // Configuration CORS corrigée
 app.use(cors({
-  origin: 'http://localhost:3000', // URL de votre frontend
+  //origin: 'http://localhost:3000', // URL de votre frontend
+    origin: ['https://ong-frontend.onrender.com', 'http://localhost:3000'],
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization']
