@@ -1,4 +1,4 @@
-# 📋 Description
+#  Description
    API RESTful pour la gestion des activités, services et messages de contact d'un ONG. Authentification sécurisée par JWT.
 
 # Lien EndpointS API deployé sur render
@@ -44,24 +44,24 @@ backend/
 └── render.yaml              # Configuration déploiement
 
 # Fonctionnement
-	- Login : POST /api/auth/login
+   - Login : POST /api/auth/login
 
-	- Vérification email/mot de passe
+   - Vérification email/mot de passe
 
-	- Génération d'un token JWT
+   - Génération d'un token JWT
 
-	- Stockage dans cookies + localStorage
+   - Stockage dans cookies + localStorage
 
-	- Vérification : Middleware auth.js
+   - Vérification : Middleware auth.js
 
-	- Token vérifié à chaque requête protégée
+   - Token vérifié à chaque requête protégée
 
-	- Ajout de l'utilisateur à l'objet req
+   - Ajout de l'utilisateur à l'objet req
 
-	- Déconnexion : Nettoyage cookies et localStorage
+   - Déconnexion : Nettoyage cookies et localStorage
 
 
-# 🗄️ Base de Données (PostgreSQL)
+#  Base de Données (PostgreSQL)
   -- Utilisateurs (admin)
 	CREATE TABLE users (
 	  id SERIAL PRIMARY KEY,
@@ -104,7 +104,7 @@ backend/
 	);
 
 
-# 📦 Technologies Utilisées
+#  Technologies Utilisées
 
 
    - Node.js / Express
@@ -117,13 +117,13 @@ backend/
 
    - Cloudinary (gestion images)
 
-   # Cloner le repository
-	git clone https://github.com/madior-git/ong_mkrt_backend.git
-	cd ong_mkrt_backend
+# Cloner le repository
+   git clone https://github.com/madior-git/ong_mkrt_backend.git
+   cd ong_mkrt_backend
 
-	# Installer les dépendances
-	npm install
+# Installer les dépendances
+  npm install
 
-	# Configurer les variables d'environnement
-	cp .env.example .env
-	# Éditer .env avec vos identifiants
+# Configurer les variables d'environnement
+   cp .env.example .env
+# Éditer .env avec vos identifiants
